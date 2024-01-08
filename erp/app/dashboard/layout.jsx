@@ -1,16 +1,15 @@
-import React from 'react';
 import Sidebar from '../ui/dashboard/Sidebar/sidebar.jsx';
 import Navbar from '../ui/dashboard/Navbar/navbar.jsx';
 
-import style from '../ui/dashboard/dashboard.module.css';
+import styles from '../ui/dashboard/dashboard.module.css';
 
 const Layout = ({ children }) => {
   return (
-    <div className={style.container}>
-      <div className={style.menu}>
+    <div className={styles.container}>
+       <div className={styles.menu}>
         <Sidebar />
       </div>
-      <div className={style.content}>
+      <div className={styles.content}>
         <Navbar />
         {children}
       </div>
@@ -18,4 +17,4 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
+export default Layout
