@@ -1,23 +1,42 @@
 {
-  "name": "nextadmingithubstarter",
+  "name": "erp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "@next/eslint-plugin-next": "14.0.1",
+    "@reduxjs/toolkit": "^2.0.1",
+    "@uploadthing/react": "^6.1.0",
+    "flowbite-react": "^0.7.2",
+    "lucide-react": "^0.307.0",
     "next": "14.0.1",
+    "next-themes": "^0.2.1",
+    "nuka-carousel": "^7.0.0",
     "react": "18",
     "react-dom": "18",
+    "react-hook-form": "^7.49.3",
+    "react-hot-toast": "^2.4.1",
     "react-icon": "^1.0.0",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "react-multi-carousel": "^2.8.4",
+    "react-redux": "^9.0.4"
   },
   "devDependencies": {
+    "@types/node": "20.10.7",
     "eslint": "8",
     "eslint-config-next": "14.0.1"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "license": "ISC"
 }
