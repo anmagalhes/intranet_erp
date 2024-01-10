@@ -90,11 +90,8 @@ const Sidebar = () => {
       <div className={styles.userDetail}>
         <span className={styles.username}>Tony</span>
         <span className={styles.userTitle}>Adminitrador</span>
-
-
-
       </div>
-
+      
       <ul  className={styles.list}>
       {menuItems.map((cat)=>(
         <li key={cat.title}>
