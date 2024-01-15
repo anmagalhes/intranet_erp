@@ -1,6 +1,5 @@
-
 "use client"
-import { supabase } from '@/lib/supabase';
+import { supabase } from './lib/supabase';
 import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Container } from '@/components/container/index';

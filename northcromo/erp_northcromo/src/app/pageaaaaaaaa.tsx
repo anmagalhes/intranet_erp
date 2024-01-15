@@ -1,7 +1,7 @@
 //import Image from 'next/image'
 //"use cliente"
 import { Container } from '@/components/container/index';
-import { supabase, supabaseAdmin } from './lib/supabase';
+import { supabase, supabaseAdmin } from '../lib/supabase';
 
 export default function Home() {
   const setNewView = async () => {

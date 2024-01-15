@@ -6,6 +6,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req:NextRequest) {
     const url = new URL(req.url);
     const cookieStore = cookies();
+
     const formData=await req.formData();
     const email = String(formData.get('email'))
     const password = String(formData.get('password'))
@@ -17,7 +18,7 @@ export async function POST(req:NextRequest) {
 
     try {
         // Registre o usuário no Supabase
-        const { user, session, error } = await supabase.auth.signUp({
+      await supabase.auth.signUp({
           email,
           password,
           options: {
